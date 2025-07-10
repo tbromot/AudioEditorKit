@@ -8,7 +8,7 @@
 import CoreGraphics
 import UIKit
 
-#if DEBUG
+#if DRAW_CONTROL_MASK
     public extension AudioClipControlView {
         func drawDebugControlMask(in ctx: CGContext) {
             var debugRect: CGRect

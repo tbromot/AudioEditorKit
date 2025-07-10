@@ -128,7 +128,7 @@ public final class AudioClipControlView: UIView {
                 width: Self.anchorControlWidth,
                 height: syncRect.height + Self.anchorCircleRadius * 4
             )
-            #if DEBUG
+            #if DRAW_CONTROL_MASK
                 Self.drawAnchorControlMaskInBounds(beginAnchorBounds, in: ctx)
             #endif
             Self.drawAnchor(
@@ -148,7 +148,7 @@ public final class AudioClipControlView: UIView {
                 width: Self.anchorControlWidth,
                 height: syncRect.height + Self.anchorCircleRadius * 4
             )
-            #if DEBUG
+            #if DRAW_CONTROL_MASK
                 Self.drawAnchorControlMaskInBounds(endAnchorBounds, in: ctx)
             #endif
             Self.drawAnchor(
@@ -161,7 +161,7 @@ public final class AudioClipControlView: UIView {
             endAnchorBounds = .zero
         }
 
-        #if DEBUG
+        #if DRAW_CONTROL_MASK
             drawDebugControlMask(in: ctx)
         #endif
     }
