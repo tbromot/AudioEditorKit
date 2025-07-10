@@ -101,26 +101,7 @@ public final class AudioClipController: UIViewController {
     }
 
     @IBAction func cancelAction(_: UIBarButtonItem) {
-        guard !hasFatalError else {
-            _cancelAction()
-            return
-        }
-        if context.isAbleToSave {
-            let alertCtrl = UIAlertController(
-                title: String(localized: "Discard Changes", bundle: .module),
-                message: String(localized: "Are you sure you want to discard the changes you made?", bundle: .module),
-                preferredStyle: .alert
-            )
-
-            alertCtrl.addAction(title: String(localized: "Cancel", bundle: .module), style: .cancel)
-            alertCtrl.addAction(title: String(localized: "Discard", bundle: .module), style: .destructive) { [weak self] _ in
-                self?._cancelAction()
-            }
-
-            present(alertCtrl, animated: true)
-        } else {
-            _cancelAction()
-        }
+        _cancelAction()
     }
 
     @IBAction func saveAction(_: UIBarButtonItem) {
