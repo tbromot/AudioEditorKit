@@ -36,6 +36,7 @@ public final class AudioClip {
     public var sampleRate: Double { audioFile.fileFormat.sampleRate }
     public var streamDescription: AudioStreamBasicDescription { audioFile.fileFormat.streamDescription.pointee }
     public var isPCMFormat: Bool { audioFile.fileFormat.commonFormat != .otherFormat }
+    public var settings: [String: Any] { audioFile.fileFormat.settings }
 
     // MARK: - Internal
 

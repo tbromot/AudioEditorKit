@@ -220,7 +220,9 @@ public final class AudioClipContext: NSObject {
         precondition(operationCount > 0, "context is discarded")
 
         let duration = current.value.duration
-        let newAudioFile = try AVAudioFile(forWriting: url, settings: settings)
+        let newFileSettings = settings.isEmpty ? current.value.settings : settings
+        let newAudioFile = try AVAudioFile(forWriting: url,
+                                           settings: newFileSettings)
 
         try checkDiskSpace(requiredSpaceInBytes: newAudioFile.estimatedFileSize(for: duration))
         try current.value.duplicate(into: newAudioFile)

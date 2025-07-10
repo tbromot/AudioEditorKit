@@ -39,7 +39,7 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="HC9-ST-gT9">
                                 <rect key="frame" x="106.33333333333333" y="114.00000000000001" width="227.33333333333337" height="56.666666666666671"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="蛇皮玩意210号 123" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="936-BU-qKs">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="蛇皮玩意210号 123" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="936-BU-qKs">
                                         <rect key="frame" x="0.0" y="0.0" width="227.33333333333334" height="32.333333333333336"/>
                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="27"/>
                                         <nil key="textColor"/>
@@ -180,14 +180,42 @@
                                     <constraint firstItem="LxY-jx-7cF" firstAttribute="height" secondItem="P0S-Zh-cVg" secondAttribute="height" id="lGG-5V-31n"/>
                                 </constraints>
                             </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QA2-At-q7q">
+                                <rect key="frame" x="32" y="809" width="75" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="hwr-T4-zyn"/>
+                                    <constraint firstAttribute="width" constant="75" id="j8o-m0-XbN"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Undo"/>
+                                <connections>
+                                    <action selector="undoAction:" destination="4DH-34-p2d" eventType="touchUpInside" id="OGM-vU-b8q"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E5x-FE-13x">
+                                <rect key="frame" x="333" y="811" width="75" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="75" id="ByH-Kf-qxr"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="35" id="Gcl-ei-BS8"/>
+                                    <constraint firstAttribute="height" constant="35" id="nHP-Km-IWW"/>
+                                    <constraint firstAttribute="width" constant="75" id="ybQ-Sk-3zx"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Redo"/>
+                                <connections>
+                                    <action selector="redoAction:" destination="4DH-34-p2d" eventType="touchUpInside" id="hQX-Id-LOt"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="BdS-g1-6zq"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="77N-li-cPi" firstAttribute="leading" secondItem="025-z0-s5S" secondAttribute="leading" id="2gj-5M-uin"/>
+                            <constraint firstItem="BdS-g1-6zq" firstAttribute="trailing" secondItem="E5x-FE-13x" secondAttribute="trailing" constant="32" id="3xS-eW-tn6"/>
                             <constraint firstItem="LBm-p9-ukT" firstAttribute="centerX" secondItem="nON-63-Asa" secondAttribute="centerX" id="9L0-xh-uVL"/>
                             <constraint firstItem="P8C-Du-hMS" firstAttribute="trailing" secondItem="025-z0-s5S" secondAttribute="trailing" id="Cnc-sc-1b2"/>
                             <constraint firstItem="BdS-g1-6zq" firstAttribute="trailing" secondItem="LBm-p9-ukT" secondAttribute="trailing" priority="990" constant="32" id="GvL-hB-QXn"/>
+                            <constraint firstItem="Mu6-kz-G4U" firstAttribute="top" secondItem="E5x-FE-13x" secondAttribute="bottom" constant="6" id="HGu-K2-a9Z"/>
                             <constraint firstAttribute="trailing" secondItem="1Nj-BD-eM3" secondAttribute="trailing" id="HaZ-iE-iaN"/>
                             <constraint firstItem="BdS-g1-6zq" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="twL-aY-jmA" secondAttribute="trailing" constant="24" id="J4r-y8-IoF"/>
                             <constraint firstItem="BdS-g1-6zq" firstAttribute="bottom" secondItem="025-z0-s5S" secondAttribute="bottom" constant="30" id="L2F-z9-pG8"/>
@@ -196,10 +224,12 @@
                             <constraint firstItem="BdS-g1-6zq" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="HC9-ST-gT9" secondAttribute="trailing" constant="24" id="Ubo-Mc-hZ1"/>
                             <constraint firstItem="HC9-ST-gT9" firstAttribute="top" secondItem="BdS-g1-6zq" secondAttribute="top" constant="8" id="UtG-4z-f7h"/>
                             <constraint firstItem="1Nj-BD-eM3" firstAttribute="top" secondItem="HC9-ST-gT9" secondAttribute="bottom" constant="48" id="Vgb-5m-MEm"/>
+                            <constraint firstItem="Mu6-kz-G4U" firstAttribute="top" secondItem="QA2-At-q7q" secondAttribute="bottom" constant="8" symbolic="YES" id="ZE8-Nb-d2s"/>
                             <constraint firstItem="77N-li-cPi" firstAttribute="top" secondItem="025-z0-s5S" secondAttribute="bottom" constant="6" id="ZcR-lS-thg"/>
                             <constraint firstItem="HC9-ST-gT9" firstAttribute="centerX" secondItem="nON-63-Asa" secondAttribute="centerX" id="aZU-ks-9h3"/>
                             <constraint firstItem="025-z0-s5S" firstAttribute="leading" secondItem="Mu6-kz-G4U" secondAttribute="leading" constant="12" id="axM-Da-hW3"/>
                             <constraint firstItem="1Nj-BD-eM3" firstAttribute="top" secondItem="wfP-E4-s6Q" secondAttribute="top" constant="9" id="bvI-qm-SUk"/>
+                            <constraint firstItem="QA2-At-q7q" firstAttribute="leading" secondItem="BdS-g1-6zq" secondAttribute="leading" constant="32" id="dMc-Qi-xEr"/>
                             <constraint firstItem="025-z0-s5S" firstAttribute="centerX" secondItem="nON-63-Asa" secondAttribute="centerX" id="eJM-Er-Jwj"/>
                             <constraint firstItem="BdS-g1-6zq" firstAttribute="trailing" secondItem="025-z0-s5S" secondAttribute="trailing" constant="24" id="ebK-ZR-JBC"/>
                             <constraint firstItem="P8C-Du-hMS" firstAttribute="top" secondItem="025-z0-s5S" secondAttribute="bottom" constant="6" id="f18-qX-yRK"/>
@@ -247,10 +277,12 @@
                         <outlet property="miniPreviewOverlayView" destination="Mu6-kz-G4U" id="Ic8-Yy-skf"/>
                         <outlet property="playPauseButton" destination="6vr-5A-Bu5" id="Ecx-SB-qJr"/>
                         <outlet property="playPauseButtonEffectView" destination="v2S-8p-hgQ" id="bUR-1X-TkZ"/>
+                        <outlet property="redoButton" destination="E5x-FE-13x" id="Rxx-9o-CMO"/>
                         <outlet property="saveButtonItem" destination="93S-Ly-mbk" id="78e-Fd-FSM"/>
                         <outlet property="subtitleLabel" destination="79R-Oe-NwU" id="brE-hj-Tav"/>
                         <outlet property="titleLabel" destination="936-BU-qKs" id="hC5-Za-MA1"/>
                         <outlet property="trimButton" destination="P0S-Zh-cVg" id="ObG-00-2CO"/>
+                        <outlet property="undoButton" destination="QA2-At-q7q" id="5k3-Q4-Z1d"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fHo-7r-1vi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -280,10 +312,10 @@
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="quaternarySystemFillColor">
-            <color red="0.45490196078431372" green="0.45490196078431372" blue="0.50196078431372548" alpha="0.080000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.4549019608" green="0.4549019608" blue="0.50196078430000002" alpha="0.080000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="secondaryLabelColor">
-            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -292,7 +324,7 @@
             <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="tertiaryLabelColor">
-            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.29803921568627451" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.29803921570000003" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

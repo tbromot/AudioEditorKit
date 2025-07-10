@@ -15,7 +15,7 @@ import UIKit
 public final class AudioClipController: UIViewController {
     public var audio: AudioFileRepresentable!
     // did changed, new file
-    public typealias AudioEditorCompletionHandler = (Bool, URL?) -> Void
+    public typealias AudioEditorCompletionHandler = (Bool, URL?, TimeInterval) -> Void
     public var completionHandler: AudioEditorCompletionHandler?
 
     private(set) var context: AudioClipContext!
@@ -49,6 +49,9 @@ public final class AudioClipController: UIViewController {
     @IBOutlet var deleteButton: UIButton!
     @IBOutlet var goBackwardButton: UIButton!
     @IBOutlet var goForwardButton: UIButton!
+    
+    @IBOutlet var undoButton: UIButton!
+    @IBOutlet var redoButton: UIButton!
 
     @IBOutlet var beginTimeLabel: UILabel!
     @IBOutlet var endTimeLabel: UILabel!
@@ -93,7 +96,7 @@ public final class AudioClipController: UIViewController {
         tearDownPlayer(beforeSave: false)
         tearDownTimers()
         dismiss(animated: true) { [weak self] in
-            self?.completionHandler?(false, nil)
+            self?.completionHandler?(false, nil, (self?.audioClip.duration ?? 0))
         }
     }
 
@@ -162,6 +165,15 @@ public final class AudioClipController: UIViewController {
         sharedPlayer.beginEditing()
         defer { sharedPlayer.endEditing() }
         sharedPlayer.currentTime = clamp(sharedPlayer.currentTime + 15, to: audioClip.timeRange)
+    }
+    
+    @IBAction func undoAction(_: UIButton) {
+        self.navigationController?.navigationBar.tintColor = UIColor.red
+        undoManager?.undo()
+    }
+    
+    @IBAction func redoAction(_: UIButton) {
+        undoManager?.redo()
     }
 
     // MARK: - Life Cycle
