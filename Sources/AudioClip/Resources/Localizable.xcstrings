@@ -14,6 +14,60 @@
             "state" : "translated",
             "value" : "需要额外的 %1$@ 的储存空间才能继续编辑。当前可用：%2$@。"
           }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Для продовження редагування потрібно ще %1$@. Доступна ємність: %2$@."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Outro %1$@ é necessário para continuar editando. Capacidade disponível: %2$@."
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "編集を続けるには、さらに%1$@が必要です。利用可能容量：%2$@。"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "مطلوب %1$@ إضافي لمتابعة التحرير. السعة المتاحة: %2$@."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Un autre %1$@ est requis pour continuer l'édition. Capacité disponible : %2$@."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Se requiere otro %1$@ para continuar editando. Capacidad disponible: %2$@."
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Для продолжения редактирования требуется ещё %1$@. Доступная ёмкость: %2$@."
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ein weiterer %1$@ ist erforderlich, um die Bearbeitung fortzusetzen. Verfügbare Kapazität: %2$@."
+          }
+        },
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Se necesita otro %1$@ para continuar editando. Capacidad disponible: %2$@."
+          }
         }
       }
     },
@@ -29,6 +83,60 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "所指定的范围（%1$lf 至 %2$lf）无效。"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Вказаний діапазон від %1$lf до %2$lf недійсний."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "O intervalo especificado de %1$lf a %2$lf é inválido."
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "指定された範囲 %1$lf から %2$lf は無効です。"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "النطاق المحدد من %1$lf إلى %2$lf غير صالح."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "La plage spécifiée de %1$lf à %2$lf est invalide."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "El rango especificado de %1$lf a %2$lf no es válido."
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Указанный диапазон от %1$lf до %2$lf недействителен."
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Der angegebene Bereich von %1$lf bis %2$lf ist ungültig."
+          }
+        },
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "El rango especificado de %1$lf a %2$lf no es válido."
           }
         }
       }
