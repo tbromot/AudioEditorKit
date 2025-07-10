@@ -2,26 +2,20 @@
   "sourceLanguage" : "en",
   "strings" : {
     "" : {
-      "shouldTranslate": false
+      "shouldTranslate" : false
     },
     "Are you sure you want to discard the changes you made?" : {
       "localizations" : {
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "你确定要放弃所有的更改？"
-          }
-        },
-        "uk" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Ви впевнені, що хочете скасувати внесені зміни?"
-          }
-        },
         "ar" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "هل أنت متأكد من أنك تريد تجاهل التغييرات التي أجريتها؟"
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Möchten Sie die vorgenommenen Änderungen wirklich verwerfen?"
           }
         },
         "es" : {
@@ -36,24 +30,6 @@
             "value" : "¿Estás seguro de que quieres descartar los cambios que hiciste?"
           }
         },
-        "de" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Möchten Sie die vorgenommenen Änderungen wirklich verwerfen?"
-          }
-        },
-        "ru" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Вы уверены, что хотите отменить внесённые изменения?"
-          }
-        },
-        "pt-BR" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Tem certeza de que deseja descartar as alterações feitas?"
-          }
-        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
@@ -65,27 +41,45 @@
             "state" : "translated",
             "value" : "変更内容を破棄してもよろしいですか？"
           }
-        }
-      }
-    },
-    "Audio File" : {
-      "localizations" : {
-        "zh-Hans" : {
+        },
+        "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "音频文件"
+            "value" : "Tem certeza de que deseja descartar as alterações feitas?"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Вы уверены, что хотите отменить внесённые изменения?"
           }
         },
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Аудіофайл"
+            "value" : "Ви впевнені, що хочете скасувати внесені зміни?"
           }
         },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "你确定要放弃所有的更改？"
+          }
+        }
+      }
+    },
+    "Audio File" : {
+      "localizations" : {
         "ar" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "ملف صوتي"
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Audiodatei"
           }
         },
         "es" : {
@@ -98,24 +92,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Archivo de audio"
-          }
-        },
-        "de" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Audiodatei"
-          }
-        },
-        "ru" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Аудиофайл"
-          }
-        },
-        "pt-BR" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Arquivo de áudio"
           }
         },
         "fr" : {
@@ -129,27 +105,45 @@
             "state" : "translated",
             "value" : "音声ファイル"
           }
-        }
-      }
-    },
-    "Cancel" : {
-      "localizations" : {
-        "zh-Hans" : {
+        },
+        "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "取消"
+            "value" : "Arquivo de áudio"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Аудиофайл"
           }
         },
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Скасувати"
+            "value" : "Аудіофайл"
           }
         },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "音频文件"
+          }
+        }
+      }
+    },
+    "Cancel" : {
+      "localizations" : {
         "ar" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "إلغاء"
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Abbrechen"
           }
         },
         "es" : {
@@ -159,24 +153,6 @@
           }
         },
         "es-419" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Cancelar"
-          }
-        },
-        "de" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Abbrechen"
-          }
-        },
-        "ru" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Отменить"
-          }
-        },
-        "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Cancelar"
@@ -193,27 +169,45 @@
             "state" : "translated",
             "value" : "キャンセル"
           }
-        }
-      }
-    },
-    "Decoding" : {
-      "localizations" : {
-        "zh-Hans" : {
+        },
+        "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "解码中"
+            "value" : "Cancelar"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Отменить"
           }
         },
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Декодування"
+            "value" : "Скасувати"
           }
         },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "取消"
+          }
+        }
+      }
+    },
+    "Decoding" : {
+      "localizations" : {
         "ar" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "فك التشفير"
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dekodierung"
           }
         },
         "es" : {
@@ -223,24 +217,6 @@
           }
         },
         "es-419" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Decodificando"
-          }
-        },
-        "de" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Dekodierung"
-          }
-        },
-        "ru" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Декодирование"
-          }
-        },
-        "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Decodificando"
@@ -257,27 +233,45 @@
             "state" : "translated",
             "value" : "デコード中"
           }
-        }
-      }
-    },
-    "Delete" : {
-      "localizations" : {
-        "zh-Hans" : {
+        },
+        "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "删除"
+            "value" : "Decodificando"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Декодирование"
           }
         },
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Видалити"
+            "value" : "Декодування"
           }
         },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "解码中"
+          }
+        }
+      }
+    },
+    "Delete" : {
+      "localizations" : {
         "ar" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "حذف"
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Löschen"
           }
         },
         "es" : {
@@ -290,24 +284,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Eliminar"
-          }
-        },
-        "de" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Löschen"
-          }
-        },
-        "ru" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Удалить"
-          }
-        },
-        "pt-BR" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Excluir"
           }
         },
         "fr" : {
@@ -321,27 +297,45 @@
             "state" : "translated",
             "value" : "削除"
           }
-        }
-      }
-    },
-    "Discard" : {
-      "localizations" : {
-        "zh-Hans" : {
+        },
+        "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "撤销"
+            "value" : "Excluir"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Удалить"
           }
         },
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Відхилити"
+            "value" : "Видалити"
           }
         },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "删除"
+          }
+        }
+      }
+    },
+    "Discard" : {
+      "localizations" : {
         "ar" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "تجاهل"
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Verwerfen"
           }
         },
         "es" : {
@@ -351,24 +345,6 @@
           }
         },
         "es-419" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Descartar"
-          }
-        },
-        "de" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Verwerfen"
-          }
-        },
-        "ru" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Отменить"
-          }
-        },
-        "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Descartar"
@@ -385,27 +361,45 @@
             "state" : "translated",
             "value" : "破棄"
           }
-        }
-      }
-    },
-    "Discard Changes" : {
-      "localizations" : {
-        "zh-Hans" : {
+        },
+        "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "撤销更改"
+            "value" : "Descartar"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Подтвердить"
           }
         },
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Скасувати зміни"
+            "value" : "Відхилити"
           }
         },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "撤销"
+          }
+        }
+      }
+    },
+    "Discard Changes" : {
+      "localizations" : {
         "ar" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "تجاهل التغييرات"
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Änderungen verwerfen"
           }
         },
         "es" : {
@@ -418,24 +412,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Descartar cambios"
-          }
-        },
-        "de" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Änderungen verwerfen"
-          }
-        },
-        "ru" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Отменить изменения"
-          }
-        },
-        "pt-BR" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Descartar alterações"
           }
         },
         "fr" : {
@@ -449,27 +425,45 @@
             "state" : "translated",
             "value" : "変更を破棄"
           }
-        }
-      }
-    },
-    "Encoding" : {
-      "localizations" : {
-        "zh-Hans" : {
+        },
+        "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "编码中"
+            "value" : "Descartar alterações"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Отменить изменения"
           }
         },
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Кодування"
+            "value" : "Скасувати зміни"
           }
         },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "撤销更改"
+          }
+        }
+      }
+    },
+    "Encoding" : {
+      "localizations" : {
         "ar" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "الترميز"
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Codierung"
           }
         },
         "es" : {
@@ -484,24 +478,6 @@
             "value" : "Codificación"
           }
         },
-        "de" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Codierung"
-          }
-        },
-        "ru" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Кодирование"
-          }
-        },
-        "pt-BR" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Codificação"
-          }
-        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
@@ -513,27 +489,45 @@
             "state" : "translated",
             "value" : "エンコード"
           }
-        }
-      }
-    },
-    "Forward 15 Seconds" : {
-      "localizations" : {
-        "zh-Hans" : {
+        },
+        "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "前进 15 秒"
+            "value" : "Codificação"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Кодирование"
           }
         },
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Вперед на 15 секунд"
+            "value" : "Кодування"
           }
         },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "编码中"
+          }
+        }
+      }
+    },
+    "Forward 15 Seconds" : {
+      "localizations" : {
         "ar" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "تقديم 15 ثانية"
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "15 Sekunden vorspulen"
           }
         },
         "es" : {
@@ -548,24 +542,6 @@
             "value" : "Adelantar 15 segundos"
           }
         },
-        "de" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "15 Sekunden vorspulen"
-          }
-        },
-        "ru" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Вперёд на 15 секунд"
-          }
-        },
-        "pt-BR" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Avançar 15 segundos"
-          }
-        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
@@ -577,27 +553,45 @@
             "state" : "translated",
             "value" : "15秒進む"
           }
-        }
-      }
-    },
-    "Operation Failed" : {
-      "localizations" : {
-        "zh-Hans" : {
+        },
+        "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "操作失败"
+            "value" : "Avançar 15 segundos"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Вперёд на 15 секунд"
           }
         },
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Операція не вдалася"
+            "value" : "Вперед на 15 секунд"
           }
         },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "前进 15 秒"
+          }
+        }
+      }
+    },
+    "Operation Failed" : {
+      "localizations" : {
         "ar" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "فشلت العملية"
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vorgang fehlgeschlagen"
           }
         },
         "es" : {
@@ -610,24 +604,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Operación fallida"
-          }
-        },
-        "de" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Vorgang fehlgeschlagen"
-          }
-        },
-        "ru" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Операция не удалась"
-          }
-        },
-        "pt-BR" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Operação falhou"
           }
         },
         "fr" : {
@@ -641,27 +617,45 @@
             "state" : "translated",
             "value" : "操作に失敗しました"
           }
-        }
-      }
-    },
-    "Pause" : {
-      "localizations" : {
-        "zh-Hans" : {
+        },
+        "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "暂停"
+            "value" : "Operação falhou"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Операция не удалась"
           }
         },
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Пауза"
+            "value" : "Операція не вдалася"
           }
         },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "操作失败"
+          }
+        }
+      }
+    },
+    "Pause" : {
+      "localizations" : {
         "ar" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "إيقاف مؤقت"
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pausieren"
           }
         },
         "es" : {
@@ -671,24 +665,6 @@
           }
         },
         "es-419" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Pausar"
-          }
-        },
-        "de" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Pausieren"
-          }
-        },
-        "ru" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Пауза"
-          }
-        },
-        "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Pausar"
@@ -705,27 +681,45 @@
             "state" : "translated",
             "value" : "一時停止"
           }
-        }
-      }
-    },
-    "Play" : {
-      "localizations" : {
-        "zh-Hans" : {
+        },
+        "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "播放"
+            "value" : "Pausar"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Пауза"
           }
         },
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Відтворити"
+            "value" : "Пауза"
           }
         },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "暂停"
+          }
+        }
+      }
+    },
+    "Play" : {
+      "localizations" : {
         "ar" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "تشغيل"
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Wiedergeben"
           }
         },
         "es" : {
@@ -740,24 +734,6 @@
             "value" : "Reproducir"
           }
         },
-        "de" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Wiedergeben"
-          }
-        },
-        "ru" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Воспроизвести"
-          }
-        },
-        "pt-BR" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Reproduzir"
-          }
-        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
@@ -769,27 +745,45 @@
             "state" : "translated",
             "value" : "再生"
           }
-        }
-      }
-    },
-    "Preview Disabled" : {
-      "localizations" : {
-        "zh-Hans" : {
+        },
+        "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "预览不可用"
+            "value" : "Reproduzir"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Воспроизвести"
           }
         },
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Попередній перегляд вимкнено"
+            "value" : "Відтворити"
           }
         },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "播放"
+          }
+        }
+      }
+    },
+    "Preview Disabled" : {
+      "localizations" : {
         "ar" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "المعاينة معطلة"
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vorschau deaktiviert"
           }
         },
         "es" : {
@@ -804,24 +798,6 @@
             "value" : "Vista previa desactivada"
           }
         },
-        "de" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Vorschau deaktiviert"
-          }
-        },
-        "ru" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Предпросмотр отключен"
-          }
-        },
-        "pt-BR" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Visualização desabilitada"
-          }
-        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
@@ -833,27 +809,45 @@
             "state" : "translated",
             "value" : "プレビューが無効"
           }
-        }
-      }
-    },
-    "Rewind 15 Seconds" : {
-      "localizations" : {
-        "zh-Hans" : {
+        },
+        "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "后退 15 秒"
+            "value" : "Visualização desabilitada"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Предпросмотр отключен"
           }
         },
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Перемотати на 15 секунд назад"
+            "value" : "Попередній перегляд вимкнено"
           }
         },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "预览不可用"
+          }
+        }
+      }
+    },
+    "Rewind 15 Seconds" : {
+      "localizations" : {
         "ar" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "العودة 15 ثانية"
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "15 Sekunden zurück"
           }
         },
         "es" : {
@@ -866,24 +860,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Retroceder 15 segundos"
-          }
-        },
-        "de" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "15 Sekunden zurück"
-          }
-        },
-        "ru" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Перемотать на 15 секунд назад"
-          }
-        },
-        "pt-BR" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Voltar 15 segundos"
           }
         },
         "fr" : {
@@ -897,27 +873,45 @@
             "state" : "translated",
             "value" : "15秒戻る"
           }
-        }
-      }
-    },
-    "Trim" : {
-      "localizations" : {
-        "zh-Hans" : {
+        },
+        "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "修剪"
+            "value" : "Voltar 15 segundos"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Перемотать на 15 секунд назад"
           }
         },
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Обрізати"
+            "value" : "Перемотати на 15 секунд назад"
           }
         },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "后退 15 秒"
+          }
+        }
+      }
+    },
+    "Trim" : {
+      "localizations" : {
         "ar" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "قص"
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zuschneiden"
           }
         },
         "es" : {
@@ -932,24 +926,6 @@
             "value" : "Recortar"
           }
         },
-        "de" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Zuschneiden"
-          }
-        },
-        "ru" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Обрезать"
-          }
-        },
-        "pt-BR" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Cortar"
-          }
-        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
@@ -960,6 +936,30 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "トリミング"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cortar"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Обрезать"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Обрізати"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "修剪"
           }
         }
       }

@@ -168,7 +168,6 @@ public final class AudioClipController: UIViewController {
     }
     
     @IBAction func undoAction(_: UIButton) {
-        self.navigationController?.navigationBar.tintColor = UIColor.red
         undoManager?.undo()
     }
     
@@ -197,6 +196,7 @@ public final class AudioClipController: UIViewController {
 
         RunLoop.main.add(progressTimer, forMode: .common)
         displayLink.add(to: .main, forMode: .common)
+    
     }
 
     override public func viewDidAppear(_ animated: Bool) {
@@ -413,6 +413,8 @@ public final class AudioClipController: UIViewController {
         deleteButton.isEnabled = isEditable
         clipOverlayView.isForbidden = !isContextLoaded
         miniPreviewOverlayView.isEnabled = true
+        undoButton.isEnabled = undoManager?.canUndo ?? false
+        redoButton.isEnabled = undoManager?.canRedo ?? false
     }
 
     private func reloadPersistentTimeLabels() {

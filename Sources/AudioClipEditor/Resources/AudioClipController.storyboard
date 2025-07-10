@@ -180,30 +180,39 @@
                                     <constraint firstItem="LxY-jx-7cF" firstAttribute="height" secondItem="P0S-Zh-cVg" secondAttribute="height" id="lGG-5V-31n"/>
                                 </constraints>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QA2-At-q7q">
-                                <rect key="frame" x="32" y="809" width="75" height="35"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W5t-7x-70U">
+                                <rect key="frame" x="0.0" y="109" width="50" height="50"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="35" id="hwr-T4-zyn"/>
-                                    <constraint firstAttribute="width" constant="75" id="j8o-m0-XbN"/>
+                                    <constraint firstAttribute="height" constant="50" id="G6j-4Y-dIf"/>
+                                    <constraint firstAttribute="width" constant="50" id="slk-lb-GtR"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Undo"/>
+                                <buttonConfiguration key="configuration" style="filled" image="arrow.counterclockwise" catalog="system">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" weight="bold"/>
+                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="baseBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
                                 <connections>
-                                    <action selector="undoAction:" destination="4DH-34-p2d" eventType="touchUpInside" id="OGM-vU-b8q"/>
+                                    <action selector="undoAction:" destination="4DH-34-p2d" eventType="touchUpInside" id="Tdl-rc-xMk"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E5x-FE-13x">
-                                <rect key="frame" x="333" y="811" width="75" height="35"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ddZ-7u-oCC">
+                                <rect key="frame" x="390" y="109" width="50" height="50"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="75" id="ByH-Kf-qxr"/>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="35" id="Gcl-ei-BS8"/>
-                                    <constraint firstAttribute="height" constant="35" id="nHP-Km-IWW"/>
-                                    <constraint firstAttribute="width" constant="75" id="ybQ-Sk-3zx"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="1aa-G5-J4T"/>
+                                    <constraint firstAttribute="height" constant="50" id="Ox7-ft-LGV"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="50" id="Y7n-L0-ghL"/>
+                                    <constraint firstAttribute="width" constant="50" id="ebw-0G-buk"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Redo"/>
+                                <buttonConfiguration key="configuration" style="filled" image="arrow.clockwise" catalog="system">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" weight="bold"/>
+                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="baseBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
                                 <connections>
-                                    <action selector="redoAction:" destination="4DH-34-p2d" eventType="touchUpInside" id="hQX-Id-LOt"/>
+                                    <action selector="redoAction:" destination="4DH-34-p2d" eventType="touchUpInside" id="PFH-lD-Las"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -211,30 +220,30 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="77N-li-cPi" firstAttribute="leading" secondItem="025-z0-s5S" secondAttribute="leading" id="2gj-5M-uin"/>
-                            <constraint firstItem="BdS-g1-6zq" firstAttribute="trailing" secondItem="E5x-FE-13x" secondAttribute="trailing" constant="32" id="3xS-eW-tn6"/>
+                            <constraint firstItem="BdS-g1-6zq" firstAttribute="trailing" secondItem="ddZ-7u-oCC" secondAttribute="trailing" id="8hW-zc-BW5"/>
                             <constraint firstItem="LBm-p9-ukT" firstAttribute="centerX" secondItem="nON-63-Asa" secondAttribute="centerX" id="9L0-xh-uVL"/>
                             <constraint firstItem="P8C-Du-hMS" firstAttribute="trailing" secondItem="025-z0-s5S" secondAttribute="trailing" id="Cnc-sc-1b2"/>
                             <constraint firstItem="BdS-g1-6zq" firstAttribute="trailing" secondItem="LBm-p9-ukT" secondAttribute="trailing" priority="990" constant="32" id="GvL-hB-QXn"/>
-                            <constraint firstItem="Mu6-kz-G4U" firstAttribute="top" secondItem="E5x-FE-13x" secondAttribute="bottom" constant="6" id="HGu-K2-a9Z"/>
                             <constraint firstAttribute="trailing" secondItem="1Nj-BD-eM3" secondAttribute="trailing" id="HaZ-iE-iaN"/>
                             <constraint firstItem="BdS-g1-6zq" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="twL-aY-jmA" secondAttribute="trailing" constant="24" id="J4r-y8-IoF"/>
                             <constraint firstItem="BdS-g1-6zq" firstAttribute="bottom" secondItem="025-z0-s5S" secondAttribute="bottom" constant="30" id="L2F-z9-pG8"/>
                             <constraint firstItem="LBm-p9-ukT" firstAttribute="top" secondItem="twL-aY-jmA" secondAttribute="bottom" constant="20" id="PTB-LY-A1K"/>
                             <constraint firstItem="twL-aY-jmA" firstAttribute="centerX" secondItem="nON-63-Asa" secondAttribute="centerX" id="QTN-1Z-ya6"/>
-                            <constraint firstItem="BdS-g1-6zq" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="HC9-ST-gT9" secondAttribute="trailing" constant="24" id="Ubo-Mc-hZ1"/>
+                            <constraint firstItem="W5t-7x-70U" firstAttribute="leading" secondItem="BdS-g1-6zq" secondAttribute="leading" id="T5N-e5-n2L"/>
+                            <constraint firstItem="BdS-g1-6zq" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="HC9-ST-gT9" secondAttribute="trailing" constant="44" id="Ubo-Mc-hZ1"/>
                             <constraint firstItem="HC9-ST-gT9" firstAttribute="top" secondItem="BdS-g1-6zq" secondAttribute="top" constant="8" id="UtG-4z-f7h"/>
                             <constraint firstItem="1Nj-BD-eM3" firstAttribute="top" secondItem="HC9-ST-gT9" secondAttribute="bottom" constant="48" id="Vgb-5m-MEm"/>
-                            <constraint firstItem="Mu6-kz-G4U" firstAttribute="top" secondItem="QA2-At-q7q" secondAttribute="bottom" constant="8" symbolic="YES" id="ZE8-Nb-d2s"/>
                             <constraint firstItem="77N-li-cPi" firstAttribute="top" secondItem="025-z0-s5S" secondAttribute="bottom" constant="6" id="ZcR-lS-thg"/>
                             <constraint firstItem="HC9-ST-gT9" firstAttribute="centerX" secondItem="nON-63-Asa" secondAttribute="centerX" id="aZU-ks-9h3"/>
                             <constraint firstItem="025-z0-s5S" firstAttribute="leading" secondItem="Mu6-kz-G4U" secondAttribute="leading" constant="12" id="axM-Da-hW3"/>
                             <constraint firstItem="1Nj-BD-eM3" firstAttribute="top" secondItem="wfP-E4-s6Q" secondAttribute="top" constant="9" id="bvI-qm-SUk"/>
-                            <constraint firstItem="QA2-At-q7q" firstAttribute="leading" secondItem="BdS-g1-6zq" secondAttribute="leading" constant="32" id="dMc-Qi-xEr"/>
+                            <constraint firstItem="W5t-7x-70U" firstAttribute="top" secondItem="BdS-g1-6zq" secondAttribute="top" constant="3" id="dBX-9v-tKV"/>
                             <constraint firstItem="025-z0-s5S" firstAttribute="centerX" secondItem="nON-63-Asa" secondAttribute="centerX" id="eJM-Er-Jwj"/>
                             <constraint firstItem="BdS-g1-6zq" firstAttribute="trailing" secondItem="025-z0-s5S" secondAttribute="trailing" constant="24" id="ebK-ZR-JBC"/>
                             <constraint firstItem="P8C-Du-hMS" firstAttribute="top" secondItem="025-z0-s5S" secondAttribute="bottom" constant="6" id="f18-qX-yRK"/>
                             <constraint firstItem="wfP-E4-s6Q" firstAttribute="leading" secondItem="1Nj-BD-eM3" secondAttribute="leading" id="hsQ-b8-S0s"/>
                             <constraint firstItem="1Nj-BD-eM3" firstAttribute="leading" secondItem="nON-63-Asa" secondAttribute="leading" id="kE8-RT-2nN"/>
+                            <constraint firstItem="ddZ-7u-oCC" firstAttribute="top" secondItem="BdS-g1-6zq" secondAttribute="top" constant="3" id="kx8-Wv-Vbe"/>
                             <constraint firstItem="BdS-g1-6zq" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="LBm-p9-ukT" secondAttribute="trailing" constant="32" id="mAa-0f-He5"/>
                             <constraint firstItem="Mu6-kz-G4U" firstAttribute="trailing" secondItem="025-z0-s5S" secondAttribute="trailing" constant="12" id="mf7-Vd-Ygn"/>
                             <constraint firstItem="025-z0-s5S" firstAttribute="top" secondItem="Mu6-kz-G4U" secondAttribute="top" constant="2" id="n3Y-eM-v0N"/>
@@ -277,12 +286,12 @@
                         <outlet property="miniPreviewOverlayView" destination="Mu6-kz-G4U" id="Ic8-Yy-skf"/>
                         <outlet property="playPauseButton" destination="6vr-5A-Bu5" id="Ecx-SB-qJr"/>
                         <outlet property="playPauseButtonEffectView" destination="v2S-8p-hgQ" id="bUR-1X-TkZ"/>
-                        <outlet property="redoButton" destination="E5x-FE-13x" id="Rxx-9o-CMO"/>
+                        <outlet property="redoButton" destination="ddZ-7u-oCC" id="bAd-ep-4CD"/>
                         <outlet property="saveButtonItem" destination="93S-Ly-mbk" id="78e-Fd-FSM"/>
                         <outlet property="subtitleLabel" destination="79R-Oe-NwU" id="brE-hj-Tav"/>
                         <outlet property="titleLabel" destination="936-BU-qKs" id="hC5-Za-MA1"/>
                         <outlet property="trimButton" destination="P0S-Zh-cVg" id="ObG-00-2CO"/>
-                        <outlet property="undoButton" destination="QA2-At-q7q" id="5k3-Q4-Z1d"/>
+                        <outlet property="undoButton" destination="W5t-7x-70U" id="ky9-3e-X7X"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fHo-7r-1vi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -307,6 +316,8 @@
         </scene>
     </scenes>
     <resources>
+        <image name="arrow.clockwise" catalog="system" width="110" height="128"/>
+        <image name="arrow.counterclockwise" catalog="system" width="110" height="128"/>
         <image name="play.fill" catalog="system" width="120" height="128"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
