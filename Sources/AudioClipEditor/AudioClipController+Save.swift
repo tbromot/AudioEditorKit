@@ -42,7 +42,16 @@ public extension AudioClipController {
                 ProgressHUDManager.dismissHUD(in: view) { [weak self] in
                     guard let self else { return }
                     dismiss(animated: true) {
-                        self.completionHandler?(true, savedURL, self.context.current.value.duration)
+                        let result = AudioClipEditingResult(
+                            edited: true,
+                            newUrl: savedURL,
+                            duration: self.context.current.value.duration,
+                            errorMessage: self.errorMessage,
+                            errorsCount: self.errorsCount ?? 0,
+                            undoCount: self.undoCount ?? 0,
+                            redoCount: self.redoCount ?? 0
+                        )
+                        self.completionHandler?(result)
                     }
                 }
             }

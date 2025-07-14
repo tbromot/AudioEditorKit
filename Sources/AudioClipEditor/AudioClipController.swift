@@ -12,10 +12,31 @@ import Combine
 import ProgressHUD
 import UIKit
 
+public final class AudioClipEditingResult {
+    public let edited: Bool
+    public let newUrl: URL?
+    public let duration: TimeInterval
+    public let errorMessage: String?
+    
+    public let errorsCount: Int
+    public let undoCount: Int
+    public let redoCount: Int
+    
+    init(edited: Bool, newUrl: URL?, duration: TimeInterval, errorMessage: String?, errorsCount: Int, undoCount: Int, redoCount: Int) {
+        self.edited = edited
+        self.newUrl = newUrl
+        self.duration = duration
+        self.errorMessage = errorMessage
+        self.errorsCount = errorsCount
+        self.undoCount = undoCount
+        self.redoCount = redoCount
+    }
+}
+
 public final class AudioClipController: UIViewController {
     public var audio: AudioFileRepresentable!
     // did changed, new file
-    public typealias AudioEditorCompletionHandler = (Bool, URL?, TimeInterval) -> Void
+    public typealias AudioEditorCompletionHandler = (AudioClipEditingResult) -> Void
     public var completionHandler: AudioEditorCompletionHandler?
 
     private(set) var context: AudioClipContext!
@@ -29,6 +50,11 @@ public final class AudioClipController: UIViewController {
     private var audioClip: AudioClip { context.current.value }
     private var audioClipCancellables = Set<AnyCancellable>()
     private var isPlayingStartedManually: Bool = false
+    
+    var undoCount: Int = 0
+    var redoCount: Int = 0
+    var errorsCount: Int = 0
+    var errorMessage: String?
 
     let sharedPlayer = AudioClipPlayer.shared
     private let isPad = UIDevice.current.userInterfaceIdiom == .pad
@@ -96,7 +122,16 @@ public final class AudioClipController: UIViewController {
         tearDownPlayer(beforeSave: false)
         tearDownTimers()
         dismiss(animated: true) { [weak self] in
-            self?.completionHandler?(false, nil, (self?.audioClip.duration ?? 0))
+            let result = AudioClipEditingResult(
+                edited: false,
+                newUrl: nil,
+                duration: self?.audioClip.duration ?? 0,
+                errorMessage: self?.errorMessage,
+                errorsCount: self?.errorsCount ?? 0,
+                undoCount: self?.undoCount ?? 0,
+                redoCount: self?.redoCount ?? 0
+            )
+            self?.completionHandler?(result)
         }
     }
 
@@ -149,10 +184,12 @@ public final class AudioClipController: UIViewController {
     }
     
     @IBAction func undoAction(_: UIButton) {
+        undoCount += 1
         undoManager?.undo()
     }
     
     @IBAction func redoAction(_: UIButton) {
+        redoCount += 1
         undoManager?.redo()
     }
 
@@ -360,6 +397,9 @@ public final class AudioClipController: UIViewController {
     }
 
     func presentFatalError(message: String) {
+        errorMessage = message
+        errorsCount += 1
+        
         messageLabel.text = message
         hasFatalError = true
     }
