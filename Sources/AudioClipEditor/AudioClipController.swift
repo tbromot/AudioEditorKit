@@ -227,6 +227,10 @@ public final class AudioClipController: UIViewController {
         navigationItem.rightBarButtonItem?.setTitleTextAttributes( [.foregroundColor: UIColor.label], for: .normal)
         navigationItem.rightBarButtonItem?.setTitleTextAttributes( [.foregroundColor: UIColor.label.withAlphaComponent(0.3)], for: .highlighted)
         navigationItem.rightBarButtonItem?.setTitleTextAttributes( [.foregroundColor: UIColor.label.withAlphaComponent(0.3)], for: .disabled)
+
+        // The host app's navigation bar tint otherwise colors the enabled buttons
+        navigationItem.leftBarButtonItem?.tintColor = .label
+        navigationItem.rightBarButtonItem?.tintColor = .label
      }
 
     override public func viewDidAppear(_ animated: Bool) {
