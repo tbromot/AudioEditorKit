@@ -220,13 +220,13 @@ public final class AudioClipController: UIViewController {
     override public func viewWillAppear(_ animated: Bool) {
          super.viewWillAppear(animated)
          
-        navigationItem.leftBarButtonItem?.setTitleTextAttributes( [.foregroundColor: UIColor.black], for: .normal)
-        navigationItem.leftBarButtonItem?.setTitleTextAttributes( [.foregroundColor: UIColor.init(white: 0.0, alpha: 0.3)], for: .highlighted)
-        navigationItem.leftBarButtonItem?.setTitleTextAttributes( [.foregroundColor: UIColor.init(white: 0.0, alpha: 0.3)], for: .disabled)
+        navigationItem.leftBarButtonItem?.setTitleTextAttributes( [.foregroundColor: UIColor.label], for: .normal)
+        navigationItem.leftBarButtonItem?.setTitleTextAttributes( [.foregroundColor: UIColor.label.withAlphaComponent(0.3)], for: .highlighted)
+        navigationItem.leftBarButtonItem?.setTitleTextAttributes( [.foregroundColor: UIColor.label.withAlphaComponent(0.3)], for: .disabled)
         
-        navigationItem.rightBarButtonItem?.setTitleTextAttributes( [.foregroundColor: UIColor.black], for: .normal)
-        navigationItem.rightBarButtonItem?.setTitleTextAttributes( [.foregroundColor: UIColor.init(white: 0.0, alpha: 0.3)], for: .highlighted)
-        navigationItem.rightBarButtonItem?.setTitleTextAttributes( [.foregroundColor: UIColor.init(white: 0.0, alpha: 0.3)], for: .disabled)
+        navigationItem.rightBarButtonItem?.setTitleTextAttributes( [.foregroundColor: UIColor.label], for: .normal)
+        navigationItem.rightBarButtonItem?.setTitleTextAttributes( [.foregroundColor: UIColor.label.withAlphaComponent(0.3)], for: .highlighted)
+        navigationItem.rightBarButtonItem?.setTitleTextAttributes( [.foregroundColor: UIColor.label.withAlphaComponent(0.3)], for: .disabled)
      }
 
     override public func viewDidAppear(_ animated: Bool) {
