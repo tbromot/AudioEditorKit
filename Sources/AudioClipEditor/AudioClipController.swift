@@ -228,6 +228,10 @@ public final class AudioClipController: UIViewController {
         navigationItem.rightBarButtonItem?.setTitleTextAttributes( [.foregroundColor: UIColor.label.withAlphaComponent(0.3)], for: .highlighted)
         navigationItem.rightBarButtonItem?.setTitleTextAttributes( [.foregroundColor: UIColor.label.withAlphaComponent(0.3)], for: .disabled)
 
+        // On iOS 26 a .done item becomes a prominent glass capsule filled with its tint,
+        // which with the .label tint below draws black text on a black capsule
+        navigationItem.rightBarButtonItem?.style = .plain
+
         // The host app's navigation bar tint otherwise colors the enabled buttons
         navigationItem.leftBarButtonItem?.tintColor = .label
         navigationItem.rightBarButtonItem?.tintColor = .label
